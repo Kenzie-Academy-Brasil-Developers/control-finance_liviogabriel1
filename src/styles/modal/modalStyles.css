@@ -112,7 +112,7 @@ dialog::backdrop {
         margin: 0;
         height: 440px;
         width: 49%;
-        left: 2%;
+        left: 1%;
         transition: none;
     }
     

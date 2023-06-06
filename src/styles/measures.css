@@ -87,15 +87,15 @@ header {
 
 @media (max-width: 700px) {
     header {
-        margin-top: -25px;
+        margin-top: -1.563rem;
     }
     .header__button {
         width: 98%;
-        margin-top: 82px;
-        margin-left: -162px;
+        margin-top: 5.125rem;
+        margin-left: -10.3rem;
     }
     .header__img {
-        margin-left: 6px;
+        margin-left: 0.375rem;
     }
     .menu {
         margin-top: -0.187rem;
@@ -109,7 +109,7 @@ header {
         width: 22%;
     }
     .selected {
-        margin-left: 12px;
+        margin-left: 0.75rem;
     }
     .total {
         margin-left: -1rem;
@@ -124,15 +124,15 @@ header {
     .list__items {
         width: 176%;
         margin-bottom: 2.313rem;
-        margin-left: -499px;
-        margin-right: 373px;
+        margin-left: -31.188rem;
+        margin-right: 23.313rem;
     }
     .value__span {
         margin-left: 9rem;
     }
     .remove {
         margin-top: -1.46rem;
-        margin-left: 266px;
+        margin-left: 16.625rem;
     }
     .buttons__container {
         margin-top: -0.125rem;
@@ -140,6 +140,6 @@ header {
     }
     .insert {
         width: 66%;
-        margin-left: 19px;
+        margin-left: 1.188rem;
     }
 }

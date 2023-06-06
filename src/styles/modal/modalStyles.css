@@ -123,34 +123,34 @@ dialog::backdrop {
     .modal__title {
         margin: 1.625rem 2.438rem -0.5rem;
         text-align: center;
-        margin-left: -135px;
+        margin-left: -8.438rem;
     }
     
     .modal__text {
         margin-top: 0px;
-        margin-left: 20px;
+        margin-left: 1.25rem;
         padding-right: 0px;
     }
     
     .modal__input {
         width: 89%;
-        margin-top: 20px;
-        margin-left: 18px;
+        margin-top: 1.25rem;
+        margin-left: 1.125rem;
     }
     
     .modal__type {
-        margin-left: 20px;
+        margin-left: 1.25rem;
     }
 
     .exit__insert {
         display: flex;
         align-items: center;
-        margin-top: -12px;
-        margin-left: 122px;
+        margin-top: -0.75rem;
+        margin-left: 7.625rem;
     }
     
     #closeModal {
-        margin-left: 260px;
-        margin-top: -37px;
+        margin-left: 16.25rem;
+        margin-top: -2.313rem;
     }
 }

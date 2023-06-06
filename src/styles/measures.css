@@ -1,0 +1,145 @@
+header {
+    margin-top: 2.813rem;
+}
+
+.header__button {
+    padding: 0.188rem 0.813rem;
+}
+
+.menu {
+    margin-top: 7.813rem;
+    margin-left: 27.813rem;
+}
+
+.buttons {
+    margin-top: 1.375rem;
+    margin-left: 39.188rem;
+}
+
+.menu__button {
+    height: 2.188rem;
+    width: 16%;
+    margin-right: 0.813rem;
+}
+
+.total {
+    margin-top: 3.375rem;
+    margin-left: 2.875rem;
+}
+
+#total-value {
+    margin-top: -0.625rem;
+}
+
+.values {
+    margin-top: 3.375rem;
+    margin-left: 0.438rem;
+}
+
+.values__info {
+    margin-top: -2.438rem;
+    margin-left: 65.5rem;
+}
+
+.noValuesMessage__container {
+    height: 7.75rem;
+    width: 57%;
+}
+
+.list__items {
+    height: 2.938rem;
+    width: 101%;
+    margin-bottom: 5.313rem;
+}
+
+.text__span {
+    margin-top: 0.75rem;
+    margin-left: 1rem;
+    margin-bottom: -1.313rem;
+}
+
+.value__span {
+    margin-top: 0.125rem;
+    margin-left: 63.125rem;
+}
+
+.remove {
+    margin-top: -1.563rem;
+    margin-left: 71.688rem;
+}
+
+.buttons__container {
+    margin-top: -3.125rem;
+    margin-left: 11.25rem;
+    gap: 2.063rem;
+}
+
+.cancel {
+    height: 1.938rem;
+    width: 54%;
+    margin-left: -5.813rem;
+}
+
+.insert {
+    height: 1.938rem;
+    width: 54%;
+}
+
+@media (max-width: 700px) {
+    header {
+        margin-top: -25px;
+    }
+    .header__button {
+        width: 98%;
+        margin-top: 82px;
+        margin-left: -162px;
+    }
+    .header__img {
+        margin-left: 6px;
+    }
+    .menu {
+        margin-top: -0.187rem;
+        margin-left: 0.5rem;
+    }
+    .buttons {
+        margin-top: 6.375rem;
+        margin-left: -9.44rem;
+    }
+    .menu__button {
+        width: 22%;
+    }
+    .selected {
+        margin-left: 12px;
+    }
+    .total {
+        margin-left: -1rem;
+    }
+    #total-value {
+        margin-top: 0;
+    }
+    .values {
+        margin-top: 2.375rem;
+        margin-left: 38.438rem;
+    }
+    .list__items {
+        width: 176%;
+        margin-bottom: 2.313rem;
+        margin-left: -499px;
+        margin-right: 373px;
+    }
+    .value__span {
+        margin-left: 9rem;
+    }
+    .remove {
+        margin-top: -1.46rem;
+        margin-left: 266px;
+    }
+    .buttons__container {
+        margin-top: -0.125rem;
+        margin-left: -0.75rem;
+    }
+    .insert {
+        width: 66%;
+        margin-left: 19px;
+    }
+}

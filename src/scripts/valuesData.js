@@ -1,5 +1,7 @@
 const valuesCategory = ["Entrada", "Saída"];
 
+let values = []
+
 let insertedValues = [
   {
     id: 1,
@@ -17,3 +19,13 @@ let insertedValues = [
     categoryID: 0,
   },
 ];
+
+const newId = insertedValues.length + 1;
+const newValue = 150.0;
+const newCategoryID = 0;
+
+insertedValues.push({
+  id: newId,
+  value: newValue,
+  categoryID: newCategoryID,
+});

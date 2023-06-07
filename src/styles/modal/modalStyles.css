@@ -56,7 +56,7 @@
 }
 
 .modal__input:focus,.modal__input.focus {
-    border-color: var(--color-brand-2);
+    border-color: var(--color-brand-1);
     outline: none;
 }
 

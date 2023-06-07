@@ -29,7 +29,7 @@ function filterValues(categoryID) {
 
   renderValues(filteredValues);
   calcularSomaValores();
-  exibirMensagemSemValores(); // Chamada adicionada aqui
+  exibirMensagemSemValores();
 }
 
 function renderValues(values) {
@@ -59,7 +59,7 @@ function renderValues(values) {
 
       imgTrash.addEventListener('click', () => {
         listItem.remove();
-        // Remover o valor excluído do array insertedValues
+        
         const index = insertedValues.findIndex((item) => item.id === value.id);
         if (index !== -1) {
           const deletedValue = insertedValues.splice(index, 1)[0];

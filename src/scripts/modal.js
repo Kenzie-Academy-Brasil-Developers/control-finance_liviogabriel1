@@ -2,11 +2,18 @@
 function abrirModal() {
   const abrirModalBtn = document.getElementById('abrirModalBtn');
   const modalController = document.getElementById('modal__controller');
-
+  const header = document.querySelector('header');
+  const totalDiv = document.querySelector('.total');
   abrirModalBtn.addEventListener('click', function () {
     modalController.showModal();
     setTimeout(function () {
       modalController.classList.add('active');
+      header.classList.add('header__modal__open');
+      totalDiv.classList.add('total__highlight');
+      const listItems = document.querySelectorAll('.list__items');
+      listItems.forEach((item) => {
+        item.classList.add('li__border');
+      });
     }, 10);
   });
 
@@ -23,7 +30,15 @@ function abrirModal() {
 
 function fecharModal() {
   const modalController = document.getElementById('modal__controller');
+  const header = document.querySelector('header');
+  const totalDiv = document.querySelector('.total');
   modalController.close();
+  header.classList.remove('header__modal__open');
+  totalDiv.classList.remove('total__highlight');
+  const listItems = document.querySelectorAll('.list__items');
+  listItems.forEach((item) => {
+    item.classList.remove('li__border');
+  });
 }
 
 abrirModal();

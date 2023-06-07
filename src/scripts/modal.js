@@ -18,23 +18,15 @@ function abrirModal() {
     }, 10);
   });
 
-  fecharModal();
+  inserirValor();
 }
 
 function fecharModal() {
-    const button = document.getElementById('closeModal');
-    const modalController = document.getElementById('modal__controller');
-    const cancelButton = document.querySelector('.cancel');
-    button.addEventListener('click', function() {
-      modalController.close()
-    })
-
-    cancelButton.addEventListener('click', function() {
-      modalController.close()
-    })
+  const modalController = document.getElementById('modal__controller');
+  modalController.close();
 }
 
-abrirModal()
+abrirModal();
 
 let selectedOption = null;
 
@@ -76,7 +68,13 @@ function inserirValor() {
       entradaButton.classList.remove('selected');
       saidaButton.classList.remove('selected');
       selectedOption = null;
+      exibirMensagemSemValores(); // Chamada adicionada aqui
     }
+  });
+
+  const cancelButton = document.querySelector('.cancel');
+  cancelButton.addEventListener('click', function () {
+    fecharModal();
   });
 }
 
@@ -102,4 +100,24 @@ modalButtons.forEach((button) => {
   });
 });
 
-inserirValor();
+function exibirMensagemSemValores() {
+  const noValuesMessage = document.getElementById('noValuesMessage');
+  const registerValue = document.getElementById('registerValue');
+  const noValuesContainer = document.querySelector('.noValuesMessage__container');
+
+  if (insertedValues.length === 0) {
+    noValuesMessage.textContent = 'Nenhum valor cadastrado';
+    noValuesMessage.style.display = 'block';
+    registerValue.style.display = 'inline';
+    noValuesContainer.classList.add('border-visible');
+  } else {
+    noValuesMessage.style.display = 'none';
+    registerValue.style.display = 'none';
+    noValuesContainer.classList.remove('border-visible');
+  }
+}
+
+renderValues(insertedValues);
+exibirMensagemSemValores();
+calcularSomaValores();
+fecharModal();

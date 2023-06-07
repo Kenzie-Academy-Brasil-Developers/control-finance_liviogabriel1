@@ -2,6 +2,10 @@ header {
     margin-top: 2.813rem;
 }
 
+.header__img {
+    margin-left: 5.25rem;
+}
+
 .header__button {
     padding: 0.188rem 0.813rem;
 }
@@ -18,17 +22,18 @@ header {
 
 .menu__button {
     height: 2.188rem;
-    width: 16%;
+    width: 13%;
     margin-right: 0.813rem;
 }
 
 .total {
     margin-top: 3.375rem;
-    margin-left: 2.875rem;
+    margin-left: 5.875rem;
 }
 
 #total-value {
     margin-top: -0.625rem;
+    margin-left: 6.063rem;
 }
 
 .values {
@@ -44,6 +49,7 @@ header {
 .noValuesMessage__container {
     height: 7.75rem;
     width: 57%;
+    margin-left: 4.938rem;
 }
 
 .list__items {
@@ -54,22 +60,22 @@ header {
 
 .text__span {
     margin-top: 0.75rem;
-    margin-left: 1rem;
+    margin-left: 5.4rem;
     margin-bottom: -1.313rem;
 }
 
 .value__span {
-    margin-top: 0.125rem;
-    margin-left: 63.125rem;
+    margin-top: -1.9rem;
+    margin-left: 57.125rem;
 }
 
 .remove {
     margin-top: -1.563rem;
-    margin-left: 71.688rem;
+    margin-left: 68.688rem;
 }
 
 .buttons__container {
-    margin-top: -3.125rem;
+    margin-top: -3.2rem;
     margin-left: 11.25rem;
     gap: 2.063rem;
 }
@@ -82,7 +88,7 @@ header {
 
 .insert {
     height: 1.938rem;
-    width: 54%;
+    width: 70%;
 }
 
 @media (max-width: 700px) {
@@ -116,6 +122,7 @@ header {
     }
     #total-value {
         margin-top: 0;
+        margin-left: 0.938rem   ;
     }
     .values {
         margin-top: 2.375rem;
@@ -127,12 +134,15 @@ header {
         margin-left: -31.188rem;
         margin-right: 23.313rem;
     }
+    .text__span {
+        margin-left: 0.1rem;
+    }
     .value__span {
-        margin-left: 9rem;
+        margin-left: 7rem;
     }
     .remove {
         margin-top: -1.46rem;
-        margin-left: 16.625rem;
+        margin-left: 17.625rem;
     }
     .buttons__container {
         margin-top: -0.125rem;

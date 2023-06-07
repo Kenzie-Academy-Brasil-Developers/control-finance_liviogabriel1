@@ -29,6 +29,7 @@ function filterValues(categoryID) {
 
   renderValues(filteredValues);
   calcularSomaValores();
+  exibirMensagemSemValores(); // Chamada adicionada aqui
 }
 
 function renderValues(values) {
@@ -88,7 +89,7 @@ function exibirMensagemSemValores() {
   const noValuesMessage = document.getElementById('noValuesMessage');
   const registerValue = document.getElementById('registerValue');
   const noValuesContainer = document.querySelector('.noValuesMessage__container');
-  
+
   if (insertedValues.length === 0) {
     noValuesMessage.textContent = 'Nenhum valor cadastrado';
     noValuesMessage.style.display = 'block';
@@ -138,8 +139,28 @@ insertButton.addEventListener('click', function () {
     selectedOption = null;
 
     renderValues(insertedValues);
-    exibirMensagemSemValores();
     calcularSomaValores();
+    exibirMensagemSemValores();
     fecharModal();
   }
+});
+
+const cancelButton = document.querySelector('.cancel');
+cancelButton.addEventListener('click', function () {
+  const valorInput = document.getElementById('valorInput');
+  const entradaButton = document.querySelector('.modal__button:nth-of-type(1)');
+  const saidaButton = document.querySelector('.modal__button:nth-of-type(2)');
+
+  valorInput.value = '';
+  entradaButton.classList.remove('selected');
+  saidaButton.classList.remove('selected');
+  selectedOption = null;
+
+  fecharModal();
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+  const todosButton = document.querySelector('.menu__button:nth-child(1)');
+  todosButton.classList.add('selected');
+  filterValues(0);
 });

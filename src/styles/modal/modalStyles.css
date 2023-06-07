@@ -1,7 +1,7 @@
 #modal__controller {
     border-radius: var(--radius-1);
     border: none;
-    margin-left: 47.5rem;
+    margin-left: 43.5rem;
     margin-top: 22.625rem;
     height: 25rem;
     width: 26%;
@@ -10,7 +10,7 @@
 }
 
 #modal__controller.active {
-    top: calc(12% - 9.25rem);
+    top: calc(12% - 11.25rem);
 }
 
 .modal__container {
@@ -96,10 +96,12 @@
 
 #closeModal {
     color: var(--color-grey-2);
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-2);
     background-color: var(--color-mode);
     border: none;
     margin-top: -3.5rem;
-    margin-left: 28.438rem;
+    margin-left: 23.438rem;
     cursor: pointer;
 }
 
@@ -110,9 +112,9 @@ dialog::backdrop {
 @media (max-width: 700px) {
     #modal__controller {
         margin: 0;
-        height: 440px;
+        height: 27.5rem;
         width: 49%;
-        left: 1%;
+        left: 2%;
         transition: none;
     }
     

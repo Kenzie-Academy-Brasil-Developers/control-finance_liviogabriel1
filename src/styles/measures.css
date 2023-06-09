@@ -1,10 +1,7 @@
 header {
-    margin-top: 2.813rem;
-}
-
-.header__modal__open {
     margin-top: -0.187rem;
 }
+
 .header__modal__open .header__button {
     padding: 0.3rem 0.813rem;
 }
@@ -14,7 +11,7 @@ header {
 }
 
 .header__button {
-    padding: 0.188rem 0.813rem;
+    padding: 0.3rem 0.813rem;
 }
 
 .menu {
@@ -34,34 +31,24 @@ header {
 }
 
 .total {
+    width: 56.9%;
+    height: 3.063rem;
     margin-top: 3.375rem;
-    margin-left: 5.875rem;
+    margin-left: 27.8rem;
 }
 
-.total__highlight {
-    width: 57.5%;
-    height: 49px;
-    margin-top: 3.375rem;
-    margin-left: 27.7rem;
+.total__text {
+    margin-top: 0.688rem;
 }
 
-.total__highlight .total__text {
-    margin-top: 11px;
-}
-
-.total__highlight #total-value {
+#total-value {
     margin-top: 0.7rem;
     margin-left: 49.063rem;
 }
 
-#total-value {
-    margin-top: -0.625rem;
-    margin-left: 6.063rem;
-}
-
 .values {
     margin-top: 3.375rem;
-    margin-left: 0.438rem;
+    margin-left: 9.438rem;
 }
 
 .values__info {
@@ -71,55 +58,31 @@ header {
 
 .noValuesMessage__container {
     height: 7.75rem;
-    width: 57%;
-    margin-left: 4.938rem;
+    width: 60.2%;
+    margin-left: -3.5rem;
 }
 
 .list__items {
     height: 2.938rem;
-    width: 101%;
+    width: 108%;
+    margin-left: -4.313rem;
     margin-bottom: 5.313rem;
-}
-
-.li__border {
-    width: 95%;
-    margin-left: 69px;
-
-}
-
-.li__border .values {
-    margin-top: 3.375rem;
-    margin-left: 9.438rem;
-}
-
-.li__border .text__span {
-    margin-left: 1.1rem;
-}
-
-.li__border .value__span {
-    margin-top: -0.9rem;
-    margin-left: 52.125rem;
-}
-
-.li__border .remove {
-    margin-top: -1.563rem;
-    margin-left: 63.688rem;
 }
 
 .text__span {
     margin-top: 0.75rem;
-    margin-left: 5.4rem;
+    margin-left: 1.1rem;
     margin-bottom: -1.313rem;
 }
 
 .value__span {
     margin-top: -0.9rem;
-    margin-left: 57.125rem;
+    margin-left: 51.125rem;
 }
 
 .remove {
     margin-top: -1.563rem;
-    margin-left: 68.688rem;
+    margin-left: 63.5rem;
 }
 
 .buttons__container {
